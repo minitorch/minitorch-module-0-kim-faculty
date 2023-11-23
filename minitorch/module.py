@@ -33,7 +33,7 @@ class Module:
         "Set the mode of this module and all descendent modules to `train`."
         self.training = True
         for child in self.modules():
-            child.training = True
+            child.train()
 
     def eval(self) -> None:
         "Set the mode of this module and all descendent modules to `eval`."
